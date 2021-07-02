@@ -1,0 +1,172 @@
+.hoteis {
+  width: 100%;
+  background-color: rgb(231, 226, 226);
+}
+
+/*estilização de busca de hoteis*/
+
+.hoteis .busca {
+  text-align: center;
+}
+
+.hoteis .busca select {
+  height: 50px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  padding-right: 20px;
+}
+
+.hoteis .busca div {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin-left: 30px;
+}
+
+.hoteis .busca div img {
+  width: 30px;
+}
+
+.hoteis .busca div strong {
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+/* estilização de lista de hoteis*/
+.hoteis .lista-hoteis {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.hoteis .lista-hoteis ul {
+  margin-left: 40%;
+  padding-bottom: 100px;
+}
+
+.hoteis .lista-hoteis ul li {
+  margin-bottom: 50px;
+  position:relative;
+  list-style: none;
+  background-color: white;
+  width: 400px;
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+
+.hoteis .lista-hoteis ul li .img {
+  position: relative;
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+  width: 400px;
+  height: 250px;
+  background-size: contain;
+}
+
+.hoteis .lista-hoteis ul li .img div{
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+  background-color: rgba(0,0,0,0.1);
+  width: 400px;
+  height: 250px;
+}
+
+.hoteis .lista-hoteis ul li .img .nome {
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  left: 10px;
+  color: white;
+  bottom: 5px;
+  font-size: 24px;
+}
+.hoteis .lista-hoteis ul li div img {
+  width: 25px;
+  position: absolute;
+  right: 50px;
+  bottom: 9px;
+}
+
+.hoteis .lista-hoteis ul li .img .classificacao {
+  font-size: 25px;
+  position: absolute;
+  right: 10px;
+  color: white;
+  bottom: 5px;
+}
+
+.hoteis .lista-hoteis ul li .preco {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.hoteis .lista-hoteis ul li .detalhes {
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.hoteis .lista-hoteis ul li .detalhes h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hoteis .lista-hoteis ul li .detalhes .endereco{
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: rgb(136, 135, 135);
+}
+
+/* estilização de responsividade da lista de card*/
+
+@media  (min-width: 768px) {
+  .hoteis .lista-hoteis ul {
+    margin-left: 0px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hoteis .lista-hoteis ul {
+    margin-left:5px;
+    padding-bottom: 100px;
+  }
+
+  .hoteis .lista-hoteis ul li {
+    margin-bottom: 50px;
+    position:relative;
+    list-style: none;
+    background-color: white;
+    width: 350px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+  }
+
+  .hoteis .lista-hoteis ul li .img {
+    position: relative;
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    width: 350px;
+    height: 250px;
+    background-size: contain;
+  }
+  
+  .hoteis .lista-hoteis ul li .img div{
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+    background-color: rgba(0,0,0,0.1);
+    width: 350px;
+    height: 250px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .hoteis .lista-hoteis ul {
+    margin-left: 40%;
+    padding-bottom: 100px;
+  }
+
+}
